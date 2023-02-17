@@ -11,3 +11,11 @@
 Для продавцов книжного интернет-магазина доступна панель администратора, где они могут управлять заказами, добавлять новые книги, удалять старые, изменять описания и цены, а также просматривать статистику продаж.
 
 В целом, книжный интернет-магазин предоставляет удобный и простой способ купить книги, не выходя из дома, а продавцам он позволяет эффективно управлять своим бизнесом и привлекать новых клиентов через интернет.
+
+## Initialize Project
+
+
+- 'python3 -m venv venv' - Create virtual environment
+- 'source venv/bin/activate' - Start virtual environment
+- 'pip install -r requirements.txt' - Download packages
+- 'python manage.py runserver' - Run local app server
