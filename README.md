@@ -19,3 +19,4 @@
 - 'source venv/bin/activate' - Start virtual environment
 - 'pip install -r requirements.txt' - Download packages
 - 'python manage.py runserver' - Run local app server
+- 'docker-compose up -d' - postgres volume
