@@ -1,0 +1,9 @@
+ORDER_STATUS = (
+    ('IN PROGRESS', 'IN PROGRESS'),
+    ('COMPLETED', 'COMPLETED'),
+    ('CANCELED', 'CANCELED'),
+)
+USER_ROLE = (
+    ('PUBLIC', 'PUBLIC'),
+    ('ADMIN', 'ADMIN')
+)
