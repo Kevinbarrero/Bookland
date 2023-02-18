@@ -9,6 +9,13 @@
             "name": "bookland",
             "database": "bookland",
             "username": "postgres"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "bookland",
+            "database": "${workspaceFolder:Bookland}/db.sqlite3"
         }
-    ]
+    ],
+    "sqltools.useNodeRuntime": true
 }

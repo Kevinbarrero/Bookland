@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth import get_user
+from django.contrib.auth import get_user_model
 from static import ORDER_STATUS, USER_ROLE
 
 
