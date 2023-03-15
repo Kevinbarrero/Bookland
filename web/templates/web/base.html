@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BookLand</title>
+  </head>
+  <body>
+    <h1><a href='{% url 'main' %}'>Main</a></h1>
+    <nav>
+        <a href='{% url 'main' %}'>Main</a>
+        {% if user.is_anonymous %}
+        <a href='{% url 'registration' %}'>Registration</a>
+        <a href='{% url 'auth' %}'>Authorization</a>
+        {% else %}
+        <a href='{% url 'logout' %}'>Logout</a>
+
+        {% endif %}
+    </nav>
+    <hr>
+    
+    {% block content%}
+
+    {% endblock %}
+
+  </body>
+</html>

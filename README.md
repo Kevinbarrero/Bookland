@@ -15,7 +15,6 @@
 ## Initialize Project
 
 
-
 - 'python3 -m venv venv' - Create virtual environment
 - 'source venv/bin/activate' - Start virtual environment
 - 'pip install -r requirements.txt' - Download packages
