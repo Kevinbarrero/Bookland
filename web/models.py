@@ -44,5 +44,16 @@ class OrderLine(models.Model):
     quantity = models.IntegerField()
     price = models.FloatField()
 
+class TimeSlotTag(models.Model):
+    title = models.CharField(max_length=256)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
 
+class TimeSlot(models.Model):
+    title = models.CharField(max_length=256)
+    start_date = models.DateTimeField()
+    end_date = models.DateTimeField()
+    is_realtime = models.BooleanField(default=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    tags = models.ManyToManyField(TimeSlotTag)
+    image = models.ImageField(upload_to='time_slots/', null=True, blank=True)
     
